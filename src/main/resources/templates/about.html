@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">О себе</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div th:replace="fragments/menu :: menu"></div>
+    <main class="content">
+        <h1 th:text="${title}">О себе</h1>
+        <p>
+            Меня зовут Камила, я дипломированный практикующий психолог.
+            Закончила Севастопольский государственный университет по специальности.
+            Имею опыт работы в школе педагогом-психологом.
+            В данный момент времени веду частную практику и потому приглашаю Вас к себе на психологическую консультацию (онлайн).
+        </p>
+        <p>
+            Работаю с любым возрастом в направлении когнитивно-поведенческой терапии, позитивной и клиент-центрированной психотерапии.
+            Опираюсь на техники арт-терапии, а также использую метафорические ассоциативные карты.
+        </p>
+        <img th:src="@{/images/diplom1.jpg}" alt="Фото диплома1" width="800">
+        <p></p>
+        <img th:src="@{/images/diplom2.jpg}" alt="Фото диплома2" width="800">
+        <p></p>
+        <img th:src="@{/images/diplom3.jpg}" alt="Фото диплома3" width="800">
+    </main>
+</div>
+</body>
+</html>

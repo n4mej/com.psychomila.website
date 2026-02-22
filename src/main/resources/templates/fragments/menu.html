@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="menu" class="sidebar">
+    <ul>
+        <li th:classappend="${activePage == 'home'} ? 'active' : ''">
+            <a th:href="@{/}">Главная</a>
+        </li>
+        <li th:classappend="${activePage == 'about'} ? 'active' : ''">
+            <a th:href="@{/about}">О себе</a>
+        </li>
+        <li th:classappend="${activePage == 'contacts'} ? 'active' : ''">
+            <a th:href="@{/contacts}">Контакты</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
