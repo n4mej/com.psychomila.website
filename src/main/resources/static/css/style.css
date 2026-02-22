@@ -52,7 +52,7 @@ body {
 }
 
 .profile-text {
-    overflow: hidden; /* чтобы текст не наезжал на фото при float */
+    overflow: hidden;
 }
 
 .profile-text h2 {
